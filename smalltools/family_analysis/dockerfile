@@ -1,0 +1,8 @@
+#install Vcf.pm
+RUN wget http://search.cpan.org/CPAN/authors/id/A/AJ/AJPAGE/Bio-Pipeline-Comparison-1.123050.tar.gz &&\
+    tar zxf Bio-Pipeline-Comparison-1.123050.tar.gz && cd Bio-Pipeline-Comparison-1.123050 &&\
+        perl Makefile.PL && make && make install &&\
+            cd ../ && rm -rf Bio-Pipeline-Comparison-1.123050* &&\
+		rm -rf /root/.cache/* && rm -rf /tmp/*
+            
+

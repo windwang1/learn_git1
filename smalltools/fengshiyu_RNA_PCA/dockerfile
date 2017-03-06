@@ -1,0 +1,7 @@
+##install R packages
+RUN wget https://cran.r-project.org/src/contrib/latticeExtra_0.6-28.tar.gz
+R CMD INSTALL latticeExtra_0.6-28.tar.gz
+RUN wget https://cran.r-project.org/src/contrib/sp_1.2-4.tar.gz
+R CMD INSTALL sp_1.2-4.tar.gz
+RUN wget https://cran.r-project.org/src/contrib/adegraphics_1.0-6.tar.gz
+R CMD INSTALL adegraphics_1.0-6.tar.gz
